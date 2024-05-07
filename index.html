@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>F12024VR</title>
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <script src= "game.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="//unpkg.com/aframe-extras@4.1.2/dist/aframe-extras.min.js"></script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+  
+
+  
+</head>
+
+<body>
+  <a-scene start-game scene physics="debug:true; friction: 0.5; restitution: 0.2; gravity: -11;">
+
+    
+    <a-plane static-body opacity="0" color="white" rotation="-90 0 0" width="250" height="250" position="-0.3 1.5 -1"></a-plane>
+
+    <a-camera wasd-controls="acceleration:3"></a-camera>
+    <a-sky src="sky3.jpg"></a-sky>
+    <a-gltf-model src="mercedes_amg_petronas__w14_2023/scene.gltf" scale="0.03 0.03 0.03" dynamic-body position="0.05 4 -0.055" ></a-gltf-model>
+    <a-gltf-model src="race_trackkarting_track_based_on_south_garda/scene.gltf" scale="0.5 0.5 0.5" position="-0.3 1.589 -1"">
+
+</a-gltf-model>
+    </a-scene>
+</body>
+</html>
+
